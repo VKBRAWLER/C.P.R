@@ -70,14 +70,9 @@ vector<Process> RR(vector<Process> processes, int n, int t) {
 }
 
 int main() {
-	int n = 4, t = 2;
-	vector<Process> processes = {
-    {1,5,0,0,0,0},
-    {2,4,1,0,0,0},
-    {3,2,2,0,0,0},
-    {4,1,4,0,0,0},
-  };
-  // input_process_data(processes, n, t);
+	int n, t;
+	vector<Process> processes;
+  input_process_data(processes, n, t);
 	processes = RR(processes, n, t);
 	output_process_data(processes, n);
 }
